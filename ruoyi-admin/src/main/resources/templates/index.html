@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>若依系统首页</title>
+    <title>联邦学习系统首页</title>
     <!-- 避免IE使用兼容模式 -->
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link th:href="@{favicon.ico}" rel="shortcut icon"/>
@@ -26,7 +26,7 @@
         </div>
         <a th:href="@{/index}">
             <li class="logo hidden-xs">
-                <span class="logo-lg">RuoYi</span>
+                <span class="logo-lg">Federated Learning</span>
             </li>
          </a>
         <div class="sidebar-collapse">
@@ -49,6 +49,8 @@
                 <li>
                     <a class="menuItem" th:href="@{/system/main}"><i class="fa fa-home"></i> <span class="nav-label">首页</span> </a>
                 </li>
+
+
                 <li th:each="menu : ${menus}">
                 	<a th:class="@{${!#strings.isEmpty(menu.url) && menu.url != '#'} ? ${menu.target}}" th:href="@{${#strings.isEmpty(menu.url)} ? |#| : ${menu.url}}">
                 		<i class="fa fa-bar-chart-o" th:class="${menu.icon}"></i>
@@ -170,6 +172,8 @@
 	                    </li>
                     </ul>
                 </li>
+
+
             </ul>
         </div>
     </nav>
@@ -185,8 +189,8 @@
                     </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right welcome-message">
-                    <li><a title="视频教程" href="http://doc.ruoyi.vip/ruoyi/document/spjc.html" target="_blank"><i class="fa fa-video-camera"></i> 视频教程</a></li>
-                    <li><a title="开发文档" href="http://doc.ruoyi.vip" target="_blank"><i class="fa fa-question-circle"></i> 开发文档</a></li>
+<!--                    <li><a title="视频教程" href="http://doc.ruoyi.vip/ruoyi/document/spjc.html" target="_blank"><i class="fa fa-video-camera"></i> 视频教程</a></li>-->
+<!--                    <li><a title="开发文档" href="http://doc.ruoyi.vip" target="_blank"><i class="fa fa-question-circle"></i> 开发文档</a></li>-->
 	                <li><a title="全屏显示" href="javascript:void(0)" id="fullScreen"><i class="fa fa-arrows-alt"></i> 全屏显示</a></li>
                     <li class="dropdown user-menu">
 						<a href="javascript:void(0)" class="dropdown-toggle" data-hover="dropdown">
