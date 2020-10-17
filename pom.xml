@@ -182,36 +182,36 @@
             
             <!-- 定时任务-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-quartz</artifactId>
+                <groupId>com.fedserver</groupId>
+                <artifactId>fedserver-quartz</artifactId>
                 <version>${fedserver.version}</version>
             </dependency>
 
             <!-- 代码生成-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-generator</artifactId>
+                <groupId>com.fedserver</groupId>
+                <artifactId>fedserver-generator</artifactId>
                 <version>${fedserver.version}</version>
             </dependency>
 
             <!-- 核心模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-framework</artifactId>
+                <groupId>com.fedserver</groupId>
+                <artifactId>fedserver-framework</artifactId>
                 <version>${fedserver.version}</version>
             </dependency>
 
             <!-- 系统模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-system</artifactId>
+                <groupId>com.fedserver</groupId>
+                <artifactId>fedserver-system</artifactId>
                 <version>${fedserver.version}</version>
             </dependency>
 
             <!-- 通用工具-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common</artifactId>
+                <groupId>com.fedserver</groupId>
+                <artifactId>fedserver-common</artifactId>
                 <version>${fedserver.version}</version>
             </dependency>
 
@@ -219,12 +219,12 @@
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-admin</module>
-        <module>ruoyi-framework</module>
-        <module>ruoyi-system</module>
-        <module>ruoyi-quartz</module>
-        <module>ruoyi-generator</module>
-        <module>ruoyi-common</module>
+        <module>fedserver-admin</module>
+        <module>fedserver-framework</module>
+        <module>fedserver-system</module>
+        <module>fedserver-quartz</module>
+        <module>fedserver-generator</module>
+        <module>fedserver-common</module>
     </modules>
     <packaging>pom</packaging>
 
