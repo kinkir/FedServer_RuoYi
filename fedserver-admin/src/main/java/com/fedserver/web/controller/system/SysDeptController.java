@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.system;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,6 +32,7 @@ import com.fedserver.system.service.ISysDeptService;
  */
 @Controller
 @RequestMapping("/system/dept")
+@Api(tags = "部门信息")
 public class SysDeptController extends BaseController
 {
     private String prefix = "system/dept";

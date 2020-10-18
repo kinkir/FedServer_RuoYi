@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +28,7 @@ import com.fedserver.common.utils.StringUtils;
  */
 @Controller
 @RequestMapping("/demo/table")
+@Api(tags = "表格相关")
 public class DemoTableController extends BaseController
 {
     private String prefix = "demo/table";

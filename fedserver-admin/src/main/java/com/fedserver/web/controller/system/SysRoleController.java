@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.system;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,6 +34,7 @@ import com.fedserver.system.service.ISysUserService;
  */
 @Controller
 @RequestMapping("/system/role")
+@Api(tags = "角色信息")
 public class SysRoleController extends BaseController
 {
     private String prefix = "system/role";

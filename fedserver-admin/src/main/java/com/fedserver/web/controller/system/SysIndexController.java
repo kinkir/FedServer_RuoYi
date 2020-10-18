@@ -3,6 +3,8 @@ package com.fedserver.web.controller.system;
 import java.util.List;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -25,6 +27,7 @@ import com.fedserver.system.service.ISysMenuService;
  * @author fedserver
  */
 @Controller
+@Api(tags = "首页 业务处理")
 public class SysIndexController extends BaseController
 {
     @Autowired

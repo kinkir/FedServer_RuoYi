@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.demo.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/demo/modal")
+@Api(tags = "模态窗口")
 public class DemoDialogController
 {
     private String prefix = "demo/modal";

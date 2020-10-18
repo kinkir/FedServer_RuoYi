@@ -2,6 +2,11 @@ package com.fedserver.web.controller.common;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +30,7 @@ import com.fedserver.common.utils.file.FileUtils;
  * @author fedserver
  */
 @Controller
+@Api(tags = "通用请求处理")
 public class CommonController
 {
     private static final Logger log = LoggerFactory.getLogger(CommonController.class);
@@ -39,6 +45,11 @@ public class CommonController
      * @param delete 是否删除
      */
     @GetMapping("common/download")
+    @ApiOperation("通用下载请求")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "fileName",value = "文件名称"),
+            @ApiImplicitParam(name = "delete",value = "是否删除")
+    })
     public void fileDownload(String fileName, Boolean delete, HttpServletResponse response, HttpServletRequest request)
     {
         try

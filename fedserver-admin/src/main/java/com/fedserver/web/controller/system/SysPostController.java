@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.system;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +31,7 @@ import com.fedserver.system.service.ISysPostService;
  */
 @Controller
 @RequestMapping("/system/post")
+@Api(tags = "岗位信息操作处理")
 public class SysPostController extends BaseController
 {
     private String prefix = "system/post";

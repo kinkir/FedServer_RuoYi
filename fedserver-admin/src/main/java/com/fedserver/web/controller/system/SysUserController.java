@@ -2,6 +2,8 @@ package com.fedserver.web.controller.system;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,6 +37,7 @@ import com.fedserver.system.service.ISysUserService;
  */
 @Controller
 @RequestMapping("/system/user")
+@Api(tags = "用户信息")
 public class SysUserController extends BaseController
 {
     private String prefix = "system/user";

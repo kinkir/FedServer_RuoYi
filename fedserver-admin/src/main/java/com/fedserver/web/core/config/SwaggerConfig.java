@@ -57,11 +57,11 @@ public class SwaggerConfig
         // 用ApiInfoBuilder进行定制
         return new ApiInfoBuilder()
                 // 设置标题
-                .title("标题：若依管理系统_接口文档")
+                .title("联邦机器学习后台管理系统_接口文档")
                 // 描述
-                .description("描述：用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块...")
+                .description("该系统为前后端一体式架构")
                 // 作者信息
-                .contact(new Contact(Global.getName(), null, null))
+                .contact(new Contact(Global.getName(), null, "1310200276@qq.com"))
                 // 版本
                 .version("版本号:" + Global.getVersion())
                 .build();

@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.monitor;
 
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import com.fedserver.common.core.controller.BaseController;
  */
 @Controller
 @RequestMapping("/monitor/data")
+@Api(tags = "监控")
 public class DruidController extends BaseController
 {
     private String prefix = "/druid";

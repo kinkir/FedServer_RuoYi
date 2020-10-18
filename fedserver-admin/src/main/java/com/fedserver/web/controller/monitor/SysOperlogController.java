@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.monitor;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,7 @@ import com.fedserver.system.service.ISysOperLogService;
  */
 @Controller
 @RequestMapping("/monitor/operlog")
+@Api(tags = "操作日志记录")
 public class SysOperlogController extends BaseController
 {
     private String prefix = "monitor/operlog";

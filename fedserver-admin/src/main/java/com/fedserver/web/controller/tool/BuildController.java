@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.tool;
 
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,7 @@ import com.fedserver.common.core.controller.BaseController;
  */
 @Controller
 @RequestMapping("/tool/build")
+@Api(tags = "build 表单构建")
 public class BuildController extends BaseController
 {
     private String prefix = "tool/build";

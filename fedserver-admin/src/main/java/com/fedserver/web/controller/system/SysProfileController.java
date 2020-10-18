@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.system;
 
+import io.swagger.annotations.Api;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,7 @@ import com.fedserver.system.service.ISysUserService;
  */
 @Controller
 @RequestMapping("/system/user/profile")
+@Api(tags = "个人信息 业务处理")
 public class SysProfileController extends BaseController
 {
     private static final Logger log = LoggerFactory.getLogger(SysProfileController.class);

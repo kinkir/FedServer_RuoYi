@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.system;
 
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -18,6 +19,7 @@ import com.fedserver.system.service.ISysConfigService;
  * @author fedserver
  */
 @Controller
+@Api(tags = "注册验证")
 public class SysRegisterController extends BaseController
 {
     @Autowired

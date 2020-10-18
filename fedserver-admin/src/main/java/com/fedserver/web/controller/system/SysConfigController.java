@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.system;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +31,7 @@ import com.fedserver.system.service.ISysConfigService;
  */
 @Controller
 @RequestMapping("/system/config")
+@Api(tags = "参数配置 信息操作处理")
 public class SysConfigController extends BaseController
 {
     private String prefix = "system/config";

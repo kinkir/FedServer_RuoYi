@@ -2,6 +2,7 @@ package com.fedserver.web.controller.monitor;
 
 import java.util.List;
 import com.fedserver.framework.shiro.service.SysPasswordService;
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +26,7 @@ import com.fedserver.system.service.ISysLogininforService;
  */
 @Controller
 @RequestMapping("/monitor/logininfor")
+@Api(tags = "系统访问记录")
 public class SysLogininforController extends BaseController
 {
     private String prefix = "monitor/logininfor";

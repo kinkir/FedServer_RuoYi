@@ -8,6 +8,8 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +25,7 @@ import com.fedserver.common.core.controller.BaseController;
  */
 @Controller
 @RequestMapping("/captcha")
+@Api(tags = "图片验证码")
 public class SysCaptchaController extends BaseController
 {
     @Resource(name = "captchaProducer")

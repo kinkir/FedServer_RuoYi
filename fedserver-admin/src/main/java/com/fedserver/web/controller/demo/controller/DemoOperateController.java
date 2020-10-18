@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +33,7 @@ import com.fedserver.web.controller.demo.domain.UserOperateModel;
  */
 @Controller
 @RequestMapping("/demo/operate")
+@Api(tags = "操作控制")
 public class DemoOperateController extends BaseController
 {
     private String prefix = "demo/operate";

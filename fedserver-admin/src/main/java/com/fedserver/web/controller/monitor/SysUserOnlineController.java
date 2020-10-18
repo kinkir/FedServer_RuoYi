@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.monitor;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +31,7 @@ import com.fedserver.system.service.ISysUserOnlineService;
  */
 @Controller
 @RequestMapping("/monitor/online")
+@Api(tags = "在线用户监控")
 public class SysUserOnlineController extends BaseController
 {
     private String prefix = "monitor/online";

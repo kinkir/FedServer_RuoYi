@@ -85,6 +85,13 @@
             <version>1.2</version>
         </dependency>
 
+        <!--test模块-->
+        <dependency>
+            <groupId>com.fedserver</groupId>
+            <artifactId>fedserver-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -92,7 +99,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.1.RELEASE</version>
+                <version>2.3.4.RELEASE</version>
                 <configuration>
                     <fork>true</fork> <!-- 如果没有该配置，devtools不会生效 -->
                 </configuration>
@@ -107,7 +114,7 @@
             <plugin>   
                 <groupId>org.apache.maven.plugins</groupId>   
                 <artifactId>maven-war-plugin</artifactId>   
-                <version>3.0.0</version>   
+                <version>3.2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <warName>${project.artifactId}</warName>

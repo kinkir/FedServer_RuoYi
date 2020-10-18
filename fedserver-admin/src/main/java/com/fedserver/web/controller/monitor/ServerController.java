@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.monitor;
 
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -15,6 +16,7 @@ import com.fedserver.framework.web.domain.Server;
  */
 @Controller
 @RequestMapping("/monitor/server")
+@Api(tags = "服务器监控")
 public class ServerController extends BaseController
 {
     private String prefix = "monitor/server";

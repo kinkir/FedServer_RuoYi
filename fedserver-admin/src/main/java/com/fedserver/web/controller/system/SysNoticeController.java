@@ -1,6 +1,8 @@
 package com.fedserver.web.controller.system;
 
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +28,7 @@ import com.fedserver.system.service.ISysNoticeService;
  */
 @Controller
 @RequestMapping("/system/notice")
+@Api(tags = "公告 信息操作处理")
 public class SysNoticeController extends BaseController
 {
     private String prefix = "system/notice";

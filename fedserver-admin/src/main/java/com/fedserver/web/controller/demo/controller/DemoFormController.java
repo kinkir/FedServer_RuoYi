@@ -2,6 +2,8 @@ package com.fedserver.web.controller.demo.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,7 @@ import com.fedserver.common.utils.StringUtils;
  */
 @Controller
 @RequestMapping("/demo/form")
+@Api(tags = "表单相关")
 public class DemoFormController
 {
     private String prefix = "demo/form";

@@ -1,5 +1,6 @@
 package com.fedserver.web.controller.demo.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/demo/report")
+@Api(tags = "报表")
 public class DemoReportController
 {
     private String prefix = "demo/report";
