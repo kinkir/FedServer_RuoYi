@@ -233,7 +233,7 @@
         <module>fedserver-quartz</module>
         <module>fedserver-generator</module>
         <module>fedserver-common</module>
-        <module>fedserver-test</module>
+        <module>fedserver-app</module>
     </modules>
     <packaging>pom</packaging>
 

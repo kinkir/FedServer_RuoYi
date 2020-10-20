@@ -87,7 +87,7 @@ create table sys_post
   update_time   datetime                                   comment '更新时间',
   remark        varchar(500)    default null               comment '备注',
   primary key (post_id)
-) engine=innodb comment = '岗位信息表';
+) engine=innodb comment = '岗位信息表' ;
 
 -- ----------------------------
 -- 初始化-岗位信息表数据
